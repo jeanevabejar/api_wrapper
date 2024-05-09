@@ -1,24 +1,21 @@
-# README
+Anime API Wrapper
+Welcome to the Anime API Wrapper! This wrapper provides easy access to the Jikan REST API v4, allowing you to retrieve anime and manga data for your applications with ease.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Cloning the Repository
+To get started with the Anime API Wrapper, follow these steps to clone the repository to your local machine:
 
-Things you may want to cover:
+Clone the repository:
 
-* Ruby version
+git clone https://github.com/yourusername/anime-api-wrapper.git
 
-* System dependencies
+Navigate to the project directory:
 
-* Configuration
+cd api_wrapper
 
-* Database creation
+Install dependencies:
+Ensure you have the necessary dependencies installed. Depending on the language or framework you're using, this step may vary.For Ruby projects with a Gemfile, you typically run:
+bash
 
-* Database initialization
+bundle install
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Adjust this step according to your project's specific setup.
