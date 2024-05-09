@@ -1,12 +1,19 @@
-<% @top_anime[:data].each do |d|%>
-
-<ul>
-    <li><%= title = d[:title]%></li>
-    <li><%= d[:mal_id]%></li>
-    <li><%= d[:images][:jpg][:image_url]%></li>
-    <img src="<%= d[:images][:jpg][:image_url]%>" alt="">
-    <%= link_to d[:title], anime_path(d[:mal_id]) %>
-</ul>
-<% end %>
-
-
+<div class="max-w-[90%] min-h-[90vh] flex-wrap flex gap-6 p-4  justify-center">
+  <div class="min-w-full h-[10vh] flex items-center justify-center">
+    <a href="https://docs.api.jikan.moe/#section/Information" target="_blank">
+      <h1 class="hover:text-blue-500 font-bold text-[2rem]">Jikan Anime REST API</h1>
+    </a>
+  </div>
+  <div class="w-full px-[3rem]">
+     <h1 class="font-bold text-[2rem]">Top Anime</h1>
+     <h1>Get Client.getTopAnime</h1>
+  </div>
+ 
+  <% @top_anime[:data].each do |d|%>
+  
+    <div class="min-w-[30%] max-w-[40%] min-h-[60Vh] max-h-[60vh]  flex flex-col items-center truncate gap-4">
+      <h1 class=" hover:bg-blue-400 max-w-[90%] truncate rounded-md px-2"><%= link_to d[:title], anime_path(d[:mal_id]) %></h1>
+      <img class="w-[80%] h-[55vh]" src="<%= d[:images][:jpg][:image_url]%>" alt="<%= d[:images][:jpg][:image_url]%>">
+    </div>
+  <% end %>
+</div>
