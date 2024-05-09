@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "animes#index"
   resources :animes
+  get 'index_data', to: 'animes#index_data', as: :index_data
+  get 'show_data/:id', to: 'animes#show_data', as: :show_data
 end

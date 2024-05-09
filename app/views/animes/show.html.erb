@@ -3,7 +3,7 @@
   <div class="border border-black w-[40%] min-h-[90vh] max-h-[90vh] overflow-auto p-4 relative">
     <div class="relative  w-full">
         <h1 class="text-[2rem] font-semibold">AnimeById</h1>
-        <h1 class="absolute top-4 right-5">Get Client.getAnimeById(id)</h1>
+         <%= link_to 'Get Client.getAnimeById(id)', show_data_path(anime[:mal_id]), class:"absolute top-4 right-5 hover:text-blue-400" %>
     </div>
     
     <img src=<%= anime[:images][:jpg][:image_url]%> alt="<%= anime[:images][:jpg][:image_url]%>">
@@ -20,7 +20,7 @@
   <div class="border border-black w-[40%] min-h-[90vh] max-h-[90vh] overflow-auto text-justify p-4 flex flex-col gap-4 overflow-x-hidden">
     <div class="w-full relative">
       <h1 class="text-[2.5rem] font-semibold">Review</h1>
-      <h1 class="absolute top-5 right-5">Get Client.getAnimeReviews(id)</h1>
+       <%= link_to 'Get Client.getAnimeReviews(id)', show_data_path(anime[:mal_id]), class:"absolute top-5 right-5 hover:text-blue-400" %>
     </div>
     <% @anime_rev[:data].each do |r|  %>
       <div class="w-full h-[7vh] flex flex-row gap-4 capitalize relative">
