@@ -1,0 +1,12 @@
+<% @top_anime[:data].each do |d|%>
+
+<ul>
+    <li><%= title = d[:title]%></li>
+    <li><%= d[:mal_id]%></li>
+    <li><%= d[:images][:jpg][:image_url]%></li>
+    <img src="<%= d[:images][:jpg][:image_url]%>" alt="">
+    <%= link_to d[:title], anime_path(d[:mal_id]) %>
+</ul>
+<% end %>
+
+

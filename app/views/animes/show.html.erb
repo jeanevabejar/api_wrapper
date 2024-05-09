@@ -1,0 +1,19 @@
+<% anime = @anime[:data] %>
+<img src=<%= anime[:images][:jpg][:image_url]%> alt="">
+<ul>
+    <li><%= anime[:title_english] %>/<%= anime[:title]  %></li>
+    <li><%= anime[:synopsis] %></li>
+    <li><%= anime[:duration] %></li>
+    <li><%= anime[:episodes] %></li>
+    <li><%= anime[:score] %></li>
+    <li><%= anime[:season] %>-<%= anime[:year]  %></li>
+</ul>
+
+
+<% @anime_rev[:data].each do |r|  %>
+
+<ul>
+    <li><%= r[:review]  %></li>
+</ul>
+<% end %>
+
