@@ -1,4 +1,6 @@
 Anime API Wrapper
+
+
 Welcome to the Anime API Wrapper! This wrapper provides easy access to the Jikan REST API v4, allowing you to retrieve anime and manga data for your applications with ease.
 
 Cloning the Repository
